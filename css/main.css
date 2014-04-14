@@ -2,21 +2,40 @@
    Author's custom styles
    ========================================================================== */
 
+.center_wrap {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  width: 100%;
+}
+
+.pftg_center {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left:0;
+  top: 50%;
+  margin-top: -185px;
+  height: 370px;
+}
+
 h1{
     text-align: center;
-    margin-top: 240px;
 }
 
 h1 span{
     font-family: 'Cabin Sketch', cursive;
     display: block;
     font-size: 72px;
+    line-height: 120%;
 }
 
 h1 small{
     font-family: 'Coming Soon', cursive;
+    line-height: 120%;
     display: block;
-    margin-top: 12px;
+    margin-top: -8px;
 }
 
 .social{
@@ -24,17 +43,24 @@ h1 small{
 }
 
 .social li{
+    font-size: 0;
     display: inline-block;
-    margin-left: 24px;
+    margin: 0 12px;
 }
 
 .social li a{
+    font-size: 14px;
     display: block;
     text-decoration: none;
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 64px;
+    height: 64px;
     text-indent: -9999px;
+    opacity: 0.75;
+}
+
+.social li a:hover{
+  opacity: 1;
 }
 
 .social li .gh{
@@ -53,14 +79,10 @@ h1 small{
     background: url(../img/bitbucket.png) no-repeat;
 }
 
+.social li .gp{
+    background: url(../img/google.png) no-repeat;
+}
 
-
-
-
-
-
-
-
-
-
-
+.social li .tw{
+    background: url(../img/twitter.png) no-repeat;
+}
